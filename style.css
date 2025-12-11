@@ -1,0 +1,290 @@
+/* College Theme Colors */
+:root {
+    --navy-blue: #003366;
+    --dark-green: #006633;
+    --beige: #f5f5dc;
+    --light-beige: #fafaf0;
+    --white: #ffffff;
+    --dark-gray: #333333;
+    --medium-gray: #666666;
+    --light-gray: #e0e0e0;
+    /* Enhanced colors for more vibrancy */
+    --accent-blue: #1a75ff;
+    --accent-green: #00cc66;
+    --accent-yellow: #ffcc00;
+    --accent-red: #ff3333;
+    --light-blue: #e6f0ff;
+    --light-green: #e6ffe6;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--light-beige) 0%, var(--beige) 100%);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.college-header {
+    background: linear-gradient(135deg, var(--navy-blue) 0%, var(--dark-green) 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid var(--accent-yellow);
+}
+
+.college-header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.college-header .lead {
+    color: var(--light-beige);
+    font-weight: 300;
+}
+
+/* Footer Styles */
+.college-footer {
+    background: linear-gradient(135deg, var(--navy-blue) 0%, var(--dark-green) 100%);
+    border-top: 4px solid var(--accent-yellow);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Classes */
+.bg-navy-blue {
+    background-color: var(--navy-blue) !important;
+}
+
+.text-navy-blue {
+    color: var(--navy-blue) !important;
+}
+
+.bg-dark-green {
+    background-color: var(--dark-green) !important;
+}
+
+.text-dark-green {
+    color: var(--dark-green) !important;
+}
+
+.bg-beige {
+    background-color: var(--beige) !important;
+}
+
+.text-beige {
+    color: var(--beige) !important;
+}
+
+/* Enhanced color classes */
+.bg-accent-blue {
+    background-color: var(--accent-blue) !important;
+}
+
+.text-accent-blue {
+    color: var(--accent-blue) !important;
+}
+
+.bg-accent-green {
+    background-color: var(--accent-green) !important;
+}
+
+.text-accent-green {
+    color: var(--accent-green) !important;
+}
+
+.bg-accent-yellow {
+    background-color: var(--accent-yellow) !important;
+}
+
+.text-accent-yellow {
+    color: var(--accent-yellow) !important;
+}
+
+/* Button Styles */
+.btn-university {
+    background: linear-gradient(135deg, var(--navy-blue) 0%, var(--dark-green) 100%);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-university:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-green) 100%);
+}
+
+.btn-university:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.25);
+}
+
+.btn-university:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20px;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(30deg);
+    transition: all 0.8s;
+}
+
+.btn-university:hover:after {
+    left: 120%;
+}
+
+/* Success button */
+.btn-success {
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--dark-green) 100%);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, var(--dark-green) 0%, var(--accent-green) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Styles */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--light-gray);
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-beige) 100%);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, var(--navy-blue) 0%, var(--dark-green) 100%);
+    color: white;
+}
+
+/* Section Styles */
+.upload-section, .bg-beige {
+    border-left: 5px solid var(--accent-yellow);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Table Styles */
+.table th {
+    font-weight: 600;
+    background-color: var(--navy-blue);
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 51, 102, 0.05);
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 0.25rem rgba(26, 117, 255, 0.25);
+}
+
+/* Loading Spinner */
+#loadingSpinner {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: var(--accent-blue);
+}
+
+/* Alert Styles */
+.alert-success {
+    background-color: var(--light-green);
+    border-left: 4px solid var(--accent-green);
+}
+
+.alert-danger {
+    background-color: #ffe6e6;
+    border-left: 4px solid var(--accent-red);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .college-header h1 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .college-footer .text-end {
+        text-align: left !important;
+    }
+}
+
+/* Academic Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--navy-blue);
+    font-weight: 600;
+}
+
+.display-4 {
+    font-weight: 700;
+}
+
+.lead {
+    font-weight: 400;
+    color: var(--white);
+}
+
+/* Icon Styles */
+.fas, .far, .fab {
+    color: var(--accent-yellow);
+}
+
+.card-header .fas, .card-header .far, .card-header .fab {
+    color: var(--white);
+}
+
+/* Chart Container */
+canvas {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--light-gray);
+}
+
+/* Badge Styles */
+.badge.bg-primary {
+    background-color: var(--accent-blue) !important;
+}
+
+.badge.bg-success {
+    background-color: var(--accent-green) !important;
+}
+
+.badge.bg-danger {
+    background-color: var(--accent-red) !important;
+}
+
+.badge.bg-info {
+    background-color: var(--accent-blue) !important;
+}
